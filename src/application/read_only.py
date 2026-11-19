@@ -1,21 +1,13 @@
-"""The fat interface remains visible here until the ISP step."""
-from legacy.bad_code import DocumentOperations
+"""Read-only client has no fake write/export methods or runtime permission stubs."""
+from src.domain.ports import DocumentReader
 
 
-class ReadOnlyDocumentView(DocumentOperations):
-    def __init__(self, reader):
+class ReadOnlyDocumentView:
+    def __init__(self, reader: DocumentReader):
         self.reader = reader
+
     def get(self, document_id):
         return self.reader.get(document_id)
+
     def list_documents(self):
         return self.reader.list_documents()
-    def create(self, *args):
-        raise PermissionError("read only")
-    def update(self, *args):
-        raise PermissionError("read only")
-    def delete(self, *args):
-        raise PermissionError("read only")
-    def versions(self, *args):
-        raise PermissionError("read only")
-    def export(self, *args):
-        raise PermissionError("read only")

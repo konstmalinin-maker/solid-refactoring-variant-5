@@ -1,6 +1,9 @@
 """Read operations; does not write files or create versions."""
+from src.domain.ports import DocumentReader
+
+
 class DocumentQueries:
-    def __init__(self, reader):
+    def __init__(self, reader: DocumentReader):
         self.reader = reader
 
     def get(self, document_id):
