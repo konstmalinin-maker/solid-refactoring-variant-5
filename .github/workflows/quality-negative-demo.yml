@@ -1,0 +1,25 @@
+name: Expected failure - legacy quality gate
+on:
+  push:
+    branches: [demo/quality-gate-baseline]
+permissions:
+  contents: read
+defaults:
+  run:
+    shell: bash
+jobs:
+  legacy-is-below-maintainability-threshold:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements.txt
+      - name: Deliberately check the original bad code (expected red)
+        run: python scripts/metrics.py --path legacy --main-class DocumentManager --output legacy-metrics.json --gate
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: rejected-legacy-metrics
+          path: legacy-metrics.json

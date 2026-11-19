@@ -1,0 +1,92 @@
+name: SOLID quality
+on:
+  push:
+    branches: [main]
+  pull_request:
+permissions:
+  contents: read
+defaults:
+  run:
+    shell: bash
+jobs:
+  tests-and-metrics:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - run: pip install -r requirements.txt
+      - run: ruff check .
+      - run: mkdir -p evidence
+      - run: python scripts/check_frozen.py | tee evidence/frozen-contract.txt
+      - run: pytest tests_before --backend=legacy -q --cov=legacy --cov-fail-under=80 --cov-report=json:evidence/coverage-before.json
+      - run: pytest tests_before tests_after -q --cov=solid --cov-fail-under=85 --cov-report=term-missing --cov-report=json:evidence/coverage-after.json --cov-report=xml:evidence/coverage.xml --junitxml=evidence/junit.xml
+      - run: pytest tests_before --backend=alternative -q
+      - run: python scripts/metrics.py --path src/solid --main-class DocumentService --output evidence/metrics.json --gate | tee evidence/quality-gate.txt
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: quality-evidence
+          path: evidence/
+  mutation:
+    needs: tests-and-metrics
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - run: pip install -r requirements.txt
+      - run: mkdir -p evidence
+      - run: mutmut run --max-children 2 > evidence/mutmut.log 2>&1
+      - run: python scripts/mutation_summary.py --output evidence/mutation.json --gate
+      - name: Preserve original mutmut metadata
+        if: always()
+        run: |
+          python - <<'PYMETA'
+          from pathlib import Path
+          import shutil
+          for source in Path('mutants').rglob('*.py.meta'):
+              target = Path('evidence/metadata') / source.relative_to('mutants')
+              target.parent.mkdir(parents=True, exist_ok=True)
+              shutil.copyfile(source, target)
+          PYMETA
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: mutation-evidence
+          path: evidence/
+  weak-tests-and-benchmark:
+    needs: tests-and-metrics
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - run: pip install -r requirements.txt
+      - run: mkdir -p evidence
+      - name: Identical discount source, weak assertions
+        run: |
+          python scripts/prepare_weak_demo.py --directory "$RUNNER_TEMP/weak"
+          cd "$RUNNER_TEMP/weak"
+          pytest -q --cov=solid.extensions.discounts --cov-report=json:weak-coverage.json
+          mutmut run --max-children 2 > mutmut.log 2>&1
+          python "$GITHUB_WORKSPACE/scripts/mutation_summary.py" --output weak-mutation.json
+          cp weak-coverage.json weak-mutation.json mutmut.log "$GITHUB_WORKSPACE/evidence/"
+      - name: Isolated real timeit comparison
+        run: python -m scripts.benchmark | tee evidence/benchmark.log
+      - run: cp docs/benchmark.json evidence/benchmark.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: comparison-evidence
+          path: evidence/
