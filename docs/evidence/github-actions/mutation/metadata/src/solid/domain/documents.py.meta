@@ -1,0 +1,20 @@
+{
+    "exit_code_by_key": {
+        "solid.domain.documents.x\u01c1TextDocument\u01c1get_text__mutmut_1": 1,
+        "solid.domain.documents.x\u01c1TextDocument\u01c1get_text__mutmut_2": 1,
+        "solid.domain.documents.x_make_document__mutmut_1": 1,
+        "solid.domain.documents.x_make_document__mutmut_2": 1,
+        "solid.domain.documents.x_make_document__mutmut_3": 1,
+        "solid.domain.documents.x_make_document__mutmut_4": 1,
+        "solid.domain.documents.x_make_document__mutmut_5": 1,
+        "solid.domain.documents.x_make_document__mutmut_6": 1,
+        "solid.domain.documents.x_make_document__mutmut_7": 1,
+        "solid.domain.documents.x_make_document__mutmut_8": 1,
+        "solid.domain.documents.x_require_text__mutmut_1": 1,
+        "solid.domain.documents.x_require_text__mutmut_2": 1,
+        "solid.domain.documents.x_require_text__mutmut_3": 1,
+        "solid.domain.documents.x_require_text__mutmut_4": 1,
+        "solid.domain.documents.x_require_text__mutmut_5": 1
+    },
+    "hash_by_function_name": {}
+}

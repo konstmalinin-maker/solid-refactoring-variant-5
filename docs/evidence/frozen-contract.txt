@@ -1,0 +1,8 @@
+FROZEN CONTRACT PASSED: legacy and characterization files are byte-identical to ce98fb0
+{
+  "conftest.py": "179bfe7ce143ccf374a79b9324aba9d82b46a7d0df5e58f923506ac14da514df",
+  "tests_before/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "tests_before/test_characterization.py": "cff1cfec0e9cec344bb258066ccfb2a534ad6372b45ea01ffc88124c4f4997f6",
+  "tests_before/test_legacy_violations.py": "75716591dd528d43ce4fad948d71d569b96c35563a11f7d904f23863dc681fa0",
+  "legacy/bad_code.py": "0c01c6b5d43c2a3ee31d7636d7906260eff825b0fbd8c6be94af6908e1eca8c6"
+}

@@ -1,0 +1,18 @@
+{
+    "exit_code_by_key": {
+        "solid.infrastructure.order_repository.x\u01c1MemoryOrderRepository\u01c1__init____mutmut_1": 1,
+        "solid.infrastructure.order_repository.x\u01c1MemoryOrderRepository\u01c1save__mutmut_1": 1,
+        "solid.infrastructure.order_repository.x\u01c1MemoryOrderRepository\u01c1save__mutmut_2": 1,
+        "solid.infrastructure.order_repository.x\u01c1MemoryOrderRepository\u01c1save__mutmut_3": 1,
+        "solid.infrastructure.order_repository.x\u01c1MemoryOrderRepository\u01c1save__mutmut_4": 1,
+        "solid.infrastructure.order_repository.x\u01c1MemoryOrderRepository\u01c1save__mutmut_5": 1,
+        "solid.infrastructure.order_repository.x\u01c1MemoryOrderRepository\u01c1save__mutmut_6": 1,
+        "solid.infrastructure.order_repository.x\u01c1MemoryOrderRepository\u01c1save__mutmut_7": 1,
+        "solid.infrastructure.order_repository.x\u01c1MemoryOrderRepository\u01c1save__mutmut_8": 1,
+        "solid.infrastructure.order_repository.x\u01c1MemoryOrderRepository\u01c1save__mutmut_9": 1,
+        "solid.infrastructure.order_repository.x\u01c1MemoryOrderRepository\u01c1save__mutmut_10": 1,
+        "solid.infrastructure.order_repository.x\u01c1MemoryOrderRepository\u01c1save__mutmut_11": 1,
+        "solid.infrastructure.order_repository.x\u01c1MemoryOrderRepository\u01c1save__mutmut_12": 1
+    },
+    "hash_by_function_name": {}
+}

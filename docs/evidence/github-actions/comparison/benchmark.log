@@ -1,0 +1,11 @@
+1000 documents: 1 functional 10.171163s
+1000 documents: 1 legacy 9.684646s
+1000 documents: 1 solid 9.850798s
+1000 documents: 2 functional 7.182544s
+1000 documents: 2 solid 8.761568s
+1000 documents: 2 legacy 8.239136s
+1000 documents: 3 legacy 8.370759s
+1000 documents: 3 solid 8.921232s
+1000 documents: 3 functional 8.022709s
+1000 orders: legacy 0.002171s
+1000 orders: solid 0.002637s

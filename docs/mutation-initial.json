@@ -1,0 +1,115 @@
+{
+  "total": 496,
+  "counts": {
+    "killed": 465,
+    "survived": 31
+  },
+  "survivor_percent": 6.25,
+  "non_killed_percent": 6.25,
+  "files": {
+    "src/solid/__init__.py.meta": {},
+    "src/solid/application/__init__.py.meta": {},
+    "src/solid/application/documents.py.meta": {
+      "killed": 67
+    },
+    "src/solid/application/exporting.py.meta": {
+      "killed": 12,
+      "survived": 1
+    },
+    "src/solid/application/queries.py.meta": {
+      "killed": 10
+    },
+    "src/solid/application/read_only.py.meta": {
+      "killed": 2
+    },
+    "src/solid/application/versions.py.meta": {
+      "killed": 22,
+      "survived": 2
+    },
+    "src/solid/compat.py.meta": {
+      "killed": 53
+    },
+    "src/solid/domain/__init__.py.meta": {},
+    "src/solid/domain/documents.py.meta": {
+      "killed": 15
+    },
+    "src/solid/domain/exporters.py.meta": {
+      "killed": 28,
+      "survived": 4
+    },
+    "src/solid/domain/ports.py.meta": {},
+    "src/solid/domain/validation.py.meta": {
+      "killed": 25
+    },
+    "src/solid/extensions/__init__.py.meta": {},
+    "src/solid/extensions/builder.py.meta": {
+      "killed": 37,
+      "survived": 1
+    },
+    "src/solid/extensions/discounts.py.meta": {
+      "killed": 6
+    },
+    "src/solid/extensions/factory.py.meta": {
+      "killed": 30
+    },
+    "src/solid/extensions/order.py.meta": {},
+    "src/solid/extensions/order_service.py.meta": {
+      "killed": 15,
+      "survived": 1
+    },
+    "src/solid/infrastructure/__init__.py.meta": {},
+    "src/solid/infrastructure/audit.py.meta": {
+      "killed": 8,
+      "survived": 3
+    },
+    "src/solid/infrastructure/catalog.py.meta": {
+      "killed": 82
+    },
+    "src/solid/infrastructure/container.py.meta": {
+      "killed": 2
+    },
+    "src/solid/infrastructure/memory.py.meta": {
+      "killed": 15
+    },
+    "src/solid/infrastructure/order_repository.py.meta": {
+      "killed": 13
+    },
+    "src/solid/infrastructure/store.py.meta": {
+      "killed": 23,
+      "survived": 19
+    }
+  },
+  "surviving_ids": [
+    "solid.application.exporting.xǁExportServiceǁexport__mutmut_5",
+    "solid.application.versions.xǁVersionServiceǁrestore__mutmut_4",
+    "solid.application.versions.xǁVersionServiceǁrestore__mutmut_21",
+    "solid.domain.exporters.xǁJsonExporterǁrender__mutmut_2",
+    "solid.domain.exporters.xǁJsonExporterǁrender__mutmut_3",
+    "solid.domain.exporters.xǁJsonExporterǁrender__mutmut_7",
+    "solid.domain.exporters.xǁJsonExporterǁrender__mutmut_10",
+    "solid.extensions.builder.xǁOrderBuilderǁbuild__mutmut_5",
+    "solid.extensions.order_service.xǁOrderServiceǁprocess_order__mutmut_5",
+    "solid.infrastructure.audit.xǁFileAuditLogǁwrite__mutmut_2",
+    "solid.infrastructure.audit.xǁFileAuditLogǁwrite__mutmut_4",
+    "solid.infrastructure.audit.xǁFileAuditLogǁwrite__mutmut_8",
+    "solid.infrastructure.store.xǁJsonStoreǁ__init____mutmut_3",
+    "solid.infrastructure.store.xǁJsonStoreǁ__init____mutmut_5",
+    "solid.infrastructure.store.xǁJsonStoreǁ__init____mutmut_7",
+    "solid.infrastructure.store.xǁJsonStoreǁ__init____mutmut_11",
+    "solid.infrastructure.store.xǁJsonStoreǁ__init____mutmut_12",
+    "solid.infrastructure.store.xǁJsonStoreǁload__mutmut_2",
+    "solid.infrastructure.store.xǁJsonStoreǁload__mutmut_4",
+    "solid.infrastructure.store.xǁJsonStoreǁsave__mutmut_2",
+    "solid.infrastructure.store.xǁJsonStoreǁsave__mutmut_4",
+    "solid.infrastructure.store.xǁJsonStoreǁsave__mutmut_6",
+    "solid.infrastructure.store.xǁJsonStoreǁsave__mutmut_7",
+    "solid.infrastructure.store.xǁJsonStoreǁsave__mutmut_8",
+    "solid.infrastructure.store.xǁJsonStoreǁsave__mutmut_10",
+    "solid.infrastructure.store.xǁJsonStoreǁsave__mutmut_11",
+    "solid.infrastructure.store.xǁJsonStoreǁsave__mutmut_12",
+    "solid.infrastructure.store.xǁJsonStoreǁsave__mutmut_13",
+    "solid.infrastructure.store.xǁJsonStoreǁsave__mutmut_14",
+    "solid.infrastructure.store.xǁJsonStoreǁsave__mutmut_15",
+    "solid.infrastructure.store.xǁJsonStoreǁsave__mutmut_17"
+  ]
+}

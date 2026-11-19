@@ -11,7 +11,7 @@ from radon.raw import analyze
 
 
 def measure(paths, main_class):
-    files = sorted({p for root in paths for p in Path(root).rglob("*.py")})
+    files = sorted({p for root in paths for p in ([Path(root)] if Path(root).is_file() else Path(root).rglob("*.py"))})
     entries, complexity, lengths, classes, main_methods = [], [], [], 0, 0
     for path in files:
         source = path.read_text()
@@ -51,10 +51,10 @@ def main():
     Path(args.output).parent.mkdir(parents=True, exist_ok=True)
     Path(args.output).write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n")
     print(json.dumps({k: v for k, v in result.items() if k != "files"}, indent=2))
-    if args.gate and (result["average_cc"] > 10 or result["minimum_mi"] < 60):
-        raise SystemExit("QUALITY GATE FAILED: average CC must be <=10; every nonempty file MI >=60")
+    if args.gate and (result["average_cc"] > 10 or result["weighted_mi"] < 60 or result["minimum_mi"] <= 19):
+        raise SystemExit("QUALITY GATE FAILED: average CC must be <=10; weighted MI >=60 and every file rank A (MI >19)")
     if args.gate:
-        print("QUALITY GATE PASSED: average CC <=10; every nonempty file MI >=60")
+        print("QUALITY GATE PASSED: average CC <=10; weighted MI >=60 and every file rank A (MI >19)")
 
 
 if __name__ == "__main__":

@@ -1,0 +1,26 @@
+legacy-is-below-maintainability-threshold	Deliberately check the original bad code (expected red)	﻿2026-11-19T11:24:12.6935219Z ##[group]Run python scripts/metrics.py --path legacy --main-class DocumentManager --output legacy-metrics.json --gate
+legacy-is-below-maintainability-threshold	Deliberately check the original bad code (expected red)	2026-11-19T11:24:12.6936189Z [36;1mpython scripts/metrics.py --path legacy --main-class DocumentManager --output legacy-metrics.json --gate[0m
+legacy-is-below-maintainability-threshold	Deliberately check the original bad code (expected red)	2026-11-19T11:24:12.6969198Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+legacy-is-below-maintainability-threshold	Deliberately check the original bad code (expected red)	2026-11-19T11:24:12.6969540Z env:
+legacy-is-below-maintainability-threshold	Deliberately check the original bad code (expected red)	2026-11-19T11:24:12.6969808Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.16/x64
+legacy-is-below-maintainability-threshold	Deliberately check the original bad code (expected red)	2026-11-19T11:24:12.6970215Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib/pkgconfig
+legacy-is-below-maintainability-threshold	Deliberately check the original bad code (expected red)	2026-11-19T11:24:12.6970652Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+legacy-is-below-maintainability-threshold	Deliberately check the original bad code (expected red)	2026-11-19T11:24:12.6971023Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+legacy-is-below-maintainability-threshold	Deliberately check the original bad code (expected red)	2026-11-19T11:24:12.6971389Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+legacy-is-below-maintainability-threshold	Deliberately check the original bad code (expected red)	2026-11-19T11:24:12.6971758Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib
+legacy-is-below-maintainability-threshold	Deliberately check the original bad code (expected red)	2026-11-19T11:24:12.6972074Z ##[endgroup]
+legacy-is-below-maintainability-threshold	Deliberately check the original bad code (expected red)	2026-11-19T11:24:12.7635550Z QUALITY GATE FAILED: average CC must be <=10; weighted MI >=60 and every file rank A (MI >19)
+legacy-is-below-maintainability-threshold	Deliberately check the original bad code (expected red)	2026-11-19T11:24:12.7636421Z {
+legacy-is-below-maintainability-threshold	Deliberately check the original bad code (expected red)	2026-11-19T11:24:12.7636616Z   "average_cc": 1.6364,
+legacy-is-below-maintainability-threshold	Deliberately check the original bad code (expected red)	2026-11-19T11:24:12.7636838Z   "cc_rank": "A",
+legacy-is-below-maintainability-threshold	Deliberately check the original bad code (expected red)	2026-11-19T11:24:12.7637038Z   "maximum_cc": 6,
+legacy-is-below-maintainability-threshold	Deliberately check the original bad code (expected red)	2026-11-19T11:24:12.7637244Z   "weighted_mi": 43.8101,
+legacy-is-below-maintainability-threshold	Deliberately check the original bad code (expected red)	2026-11-19T11:24:12.7637469Z   "minimum_mi": 43.8101,
+legacy-is-below-maintainability-threshold	Deliberately check the original bad code (expected red)	2026-11-19T11:24:12.7637704Z   "average_method_loc": 3.7273,
+legacy-is-below-maintainability-threshold	Deliberately check the original bad code (expected red)	2026-11-19T11:24:12.7637945Z   "maximum_method_loc": 15,
+legacy-is-below-maintainability-threshold	Deliberately check the original bad code (expected red)	2026-11-19T11:24:12.7638192Z   "main_class": "DocumentManager",
+legacy-is-below-maintainability-threshold	Deliberately check the original bad code (expected red)	2026-11-19T11:24:12.7638449Z   "main_class_methods": 13,
+legacy-is-below-maintainability-threshold	Deliberately check the original bad code (expected red)	2026-11-19T11:24:12.7638677Z   "classes": 6,
+legacy-is-below-maintainability-threshold	Deliberately check the original bad code (expected red)	2026-11-19T11:24:12.7638875Z   "sloc": 139
+legacy-is-below-maintainability-threshold	Deliberately check the original bad code (expected red)	2026-11-19T11:24:12.7639054Z }
+legacy-is-below-maintainability-threshold	Deliberately check the original bad code (expected red)	2026-11-19T11:24:12.7711892Z ##[error]Process completed with exit code 1.

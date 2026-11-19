@@ -1,0 +1,14 @@
+{
+  "average_cc": 1.4101,
+  "cc_rank": "A",
+  "maximum_cc": 7,
+  "weighted_mi": 68.5398,
+  "minimum_mi": 47.3851,
+  "average_method_loc": 3,
+  "maximum_method_loc": 11,
+  "main_class": "DocumentService",
+  "main_class_methods": 4,
+  "classes": 40,
+  "sloc": 380
+}
+QUALITY GATE PASSED: average CC <=10; weighted MI >=60 and every file rank A (MI >19)

@@ -1,0 +1,18 @@
+{
+    "exit_code_by_key": {
+        "solid.application.exporting.x\u01c1ExportService\u01c1__init____mutmut_1": 1,
+        "solid.application.exporting.x\u01c1ExportService\u01c1__init____mutmut_2": 1,
+        "solid.application.exporting.x\u01c1ExportService\u01c1__init____mutmut_3": 1,
+        "solid.application.exporting.x\u01c1ExportService\u01c1export__mutmut_1": 1,
+        "solid.application.exporting.x\u01c1ExportService\u01c1export__mutmut_2": 1,
+        "solid.application.exporting.x\u01c1ExportService\u01c1export__mutmut_3": 1,
+        "solid.application.exporting.x\u01c1ExportService\u01c1export__mutmut_4": 1,
+        "solid.application.exporting.x\u01c1ExportService\u01c1export__mutmut_5": 1,
+        "solid.application.exporting.x\u01c1ExportService\u01c1export__mutmut_6": 1,
+        "solid.application.exporting.x\u01c1ExportService\u01c1export__mutmut_7": 1,
+        "solid.application.exporting.x\u01c1ExportService\u01c1export__mutmut_8": 1,
+        "solid.application.exporting.x\u01c1ExportService\u01c1export__mutmut_9": 1,
+        "solid.application.exporting.x\u01c1ExportService\u01c1export__mutmut_10": 1
+    },
+    "hash_by_function_name": {}
+}

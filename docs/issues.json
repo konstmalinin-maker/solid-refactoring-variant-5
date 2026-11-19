@@ -1,0 +1,27 @@
+[
+  {
+    "number": 1,
+    "url": "https://github.com/konstmalinin-maker/solid-refactoring-variant-5/issues/1",
+    "title": "SRP: разделить ответственности DocumentManager"
+  },
+  {
+    "number": 2,
+    "url": "https://github.com/konstmalinin-maker/solid-refactoring-variant-5/issues/2",
+    "title": "OCP: расширять экспорт без if/elif"
+  },
+  {
+    "number": 3,
+    "url": "https://github.com/konstmalinin-maker/solid-refactoring-variant-5/issues/3",
+    "title": "LSP: отделить текстовый контракт от сканов"
+  },
+  {
+    "number": 4,
+    "url": "https://github.com/konstmalinin-maker/solid-refactoring-variant-5/issues/4",
+    "title": "ISP: устранить толстый интерфейс"
+  },
+  {
+    "number": 5,
+    "url": "https://github.com/konstmalinin-maker/solid-refactoring-variant-5/issues/5",
+    "title": "DIP: внедрить абстракции хранения и аудита"
+  }
+]

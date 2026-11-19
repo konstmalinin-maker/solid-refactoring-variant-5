@@ -1,0 +1,7 @@
+{
+  "positive_ci": "https://github.com/konstmalinin-maker/solid-refactoring-variant-5/actions/runs/44515942876",
+  "expected_negative_ci": "https://github.com/konstmalinin-maker/solid-refactoring-variant-5/actions/runs/44514466635",
+  "pull_request": "https://github.com/konstmalinin-maker/solid-refactoring-variant-5/pull/6",
+  "baseline": "80b1bde",
+  "frozen_tests": "ce98fb0"
+}

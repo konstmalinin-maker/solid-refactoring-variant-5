@@ -14,3 +14,6 @@ mutants/
 .mutmut-cache*
 benchmark-data/
 demo-data/
+
+*.egg-info/
+build/

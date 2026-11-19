@@ -1,0 +1,8 @@
+EXPECTED FAILURE: original legacy violates numeric maintainability threshold
+https://github.com/konstmalinin-maker/solid-refactoring-variant-5/actions/runs/44514466635
+
+2026-11-19T11:24:12.7635550Z QUALITY GATE FAILED: average CC must be <=10; weighted MI >=60 and every file rank A (MI >19)
+2026-11-19T11:24:12.7636616Z   "average_cc": 1.6364,
+2026-11-19T11:24:12.7637244Z   "weighted_mi": 43.8101,
+2026-11-19T11:24:12.7637469Z   "minimum_mi": 43.8101,
+2026-11-19T11:24:12.7711892Z ##[error]Process completed with exit code 1.

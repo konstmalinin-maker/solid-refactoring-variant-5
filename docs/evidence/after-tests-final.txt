@@ -1,0 +1,38 @@
+........................................................................ [ 96%]
+...                                                                      [100%]
+================================ tests coverage ================================
+_______________ coverage: platform linux, python 3.12.14-final-0 _______________
+
+Name                                           Stmts   Miss  Cover   Missing
+----------------------------------------------------------------------------
+src/solid/__init__.py                              0      0   100%
+src/solid/application/__init__.py                  0      0   100%
+src/solid/application/documents.py                25      0   100%
+src/solid/application/exporting.py                12      0   100%
+src/solid/application/queries.py                  11      0   100%
+src/solid/application/read_only.py                 8      0   100%
+src/solid/application/versions.py                 12      0   100%
+src/solid/compat.py                               35      0   100%
+src/solid/domain/__init__.py                       0      0   100%
+src/solid/domain/documents.py                     23      0   100%
+src/solid/domain/exporters.py                     26      0   100%
+src/solid/domain/ports.py                          6      0   100%
+src/solid/domain/validation.py                    12      0   100%
+src/solid/extensions/__init__.py                   0      0   100%
+src/solid/extensions/builder.py                   24      0   100%
+src/solid/extensions/discounts.py                 15      0   100%
+src/solid/extensions/factory.py                   14      0   100%
+src/solid/extensions/order.py                     28      0   100%
+src/solid/extensions/order_service.py             11      0   100%
+src/solid/infrastructure/__init__.py               0      0   100%
+src/solid/infrastructure/audit.py                  7      0   100%
+src/solid/infrastructure/catalog.py               32      0   100%
+src/solid/infrastructure/container.py             15      0   100%
+src/solid/infrastructure/memory.py                13      0   100%
+src/solid/infrastructure/order_repository.py      15      0   100%
+src/solid/infrastructure/store.py                 13      0   100%
+----------------------------------------------------------------------------
+TOTAL                                            357      0   100%
+Coverage JSON written to file /workspace/pr9-data/after-coverage.json
+Required test coverage of 85% reached. Total coverage: 100.00%
+75 passed in 0.39s

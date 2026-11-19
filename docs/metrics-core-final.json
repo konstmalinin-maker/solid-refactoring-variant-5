@@ -1,0 +1,113 @@
+{
+  "average_cc": 1.373,
+  "cc_rank": "A",
+  "maximum_cc": 6,
+  "weighted_mi": 67.3672,
+  "minimum_mi": 54.4817,
+  "average_method_loc": 2.9375,
+  "maximum_method_loc": 11,
+  "main_class": "DocumentService",
+  "main_class_methods": 4,
+  "classes": 27,
+  "sloc": 248,
+  "files": [
+    {
+      "file": "src/solid/application/documents.py",
+      "sloc": 25,
+      "mi": 58.68,
+      "rank": "A",
+      "imports": 2
+    },
+    {
+      "file": "src/solid/application/exporting.py",
+      "sloc": 12,
+      "mi": 66.6913,
+      "rank": "A",
+      "imports": 2
+    },
+    {
+      "file": "src/solid/application/queries.py",
+      "sloc": 12,
+      "mi": 65.5622,
+      "rank": "A",
+      "imports": 1
+    },
+    {
+      "file": "src/solid/application/read_only.py",
+      "sloc": 8,
+      "mi": 100.0,
+      "rank": "A",
+      "imports": 1
+    },
+    {
+      "file": "src/solid/application/versions.py",
+      "sloc": 12,
+      "mi": 66.4223,
+      "rank": "A",
+      "imports": 0
+    },
+    {
+      "file": "src/solid/compat.py",
+      "sloc": 35,
+      "mi": 54.4817,
+      "rank": "A",
+      "imports": 9
+    },
+    {
+      "file": "src/solid/domain/documents.py",
+      "sloc": 26,
+      "mi": 64.2519,
+      "rank": "A",
+      "imports": 4
+    },
+    {
+      "file": "src/solid/domain/exporters.py",
+      "sloc": 28,
+      "mi": 64.0146,
+      "rank": "A",
+      "imports": 4
+    },
+    {
+      "file": "src/solid/domain/ports.py",
+      "sloc": 13,
+      "mi": 100.0,
+      "rank": "A",
+      "imports": 1
+    },
+    {
+      "file": "src/solid/domain/validation.py",
+      "sloc": 12,
+      "mi": 63.5517,
+      "rank": "A",
+      "imports": 0
+    },
+    {
+      "file": "src/solid/infrastructure/audit.py",
+      "sloc": 7,
+      "mi": 100.0,
+      "rank": "A",
+      "imports": 1
+    },
+    {
+      "file": "src/solid/infrastructure/catalog.py",
+      "sloc": 32,
+      "mi": 55.0848,
+      "rank": "A",
+      "imports": 0
+    },
+    {
+      "file": "src/solid/infrastructure/memory.py",
+      "sloc": 13,
+      "mi": 100.0,
+      "rank": "A",
+      "imports": 1
+    },
+    {
+      "file": "src/solid/infrastructure/store.py",
+      "sloc": 13,
+      "mi": 66.2164,
+      "rank": "A",
+      "imports": 2
+    }
+  ]
+}

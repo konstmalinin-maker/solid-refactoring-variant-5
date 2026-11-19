@@ -1,0 +1,44 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.14, pytest-8.3.5, pluggy-1.7.0 -- /workspace/venv-pr9/bin/python
+cachedir: .pytest_cache
+rootdir: /workspace/solid-refactoring-variant-5
+configfile: pyproject.toml
+plugins: platformdirs-4.14.7, cov-6.1.1
+collecting ... collected 23 items
+
+tests_before/test_characterization.py::test_create_normalizes_title_and_has_exact_fields PASSED [  4%]
+tests_before/test_characterization.py::test_empty_content_is_allowed PASSED [  8%]
+tests_before/test_characterization.py::test_invalid_create_has_no_side_effect[None-x-text-title must be a string] PASSED [ 13%]
+tests_before/test_characterization.py::test_invalid_create_has_no_side_effect[   -x-text-title is required] PASSED [ 17%]
+tests_before/test_characterization.py::test_invalid_create_has_no_side_effect[xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-x-text-title is too long] PASSED [ 21%]
+tests_before/test_characterization.py::test_invalid_create_has_no_side_effect[x-None-text-content must be a string] PASSED [ 26%]
+tests_before/test_characterization.py::test_invalid_create_has_no_side_effect[x-123-text-content must be a string] PASSED [ 30%]
+tests_before/test_characterization.py::test_invalid_create_has_no_side_effect[x-x-unknown-unknown document kind] PASSED [ 34%]
+tests_before/test_characterization.py::test_title_boundary PASSED        [ 39%]
+tests_before/test_characterization.py::test_ids_are_monotonic_and_sorted PASSED [ 43%]
+tests_before/test_characterization.py::test_get_missing PASSED           [ 47%]
+tests_before/test_characterization.py::test_update_and_version_snapshots PASSED [ 52%]
+tests_before/test_characterization.py::test_invalid_update_does_not_change_history PASSED [ 56%]
+tests_before/test_characterization.py::test_update_missing PASSED        [ 60%]
+tests_before/test_characterization.py::test_delete_keeps_history PASSED  [ 65%]
+tests_before/test_characterization.py::test_restore_creates_new_version PASSED [ 69%]
+tests_before/test_characterization.py::test_results_are_defensive_copies PASSED [ 73%]
+tests_before/test_characterization.py::test_search_title_content_and_unicode PASSED [ 78%]
+tests_before/test_characterization.py::test_exports_exact_bytes PASSED   [ 82%]
+tests_before/test_characterization.py::test_scan_contract PASSED         [ 86%]
+tests_before/test_characterization.py::test_reopen_persistence_and_exact_audit PASSED [ 91%]
+tests_before/test_legacy_violations.py::test_original_lsp_violation PASSED [ 95%]
+tests_before/test_legacy_violations.py::test_original_fat_interface PASSED [100%]
+
+================================ tests coverage ================================
+_______________ coverage: platform linux, python 3.12.14-final-0 _______________
+
+Name                 Stmts   Miss  Cover   Missing
+--------------------------------------------------
+legacy/__init__.py       0      0   100%
+legacy/bad_code.py     125      0   100%
+--------------------------------------------------
+TOTAL                  125      0   100%
+Coverage JSON written to file /workspace/pr9-data/before-coverage.json
+Required test coverage of 80% reached. Total coverage: 100.00%
+============================== 23 passed in 0.22s ==============================
