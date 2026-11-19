@@ -1,0 +1,162 @@
+{
+  "average_cc": 1.4101,
+  "cc_rank": "A",
+  "maximum_cc": 7,
+  "weighted_mi": 68.5398,
+  "minimum_mi": 47.3851,
+  "average_method_loc": 3,
+  "maximum_method_loc": 11,
+  "main_class": "DocumentService",
+  "main_class_methods": 4,
+  "classes": 40,
+  "sloc": 380,
+  "files": [
+    {
+      "file": "src/application/documents.py",
+      "sloc": 25,
+      "mi": 58.68,
+      "rank": "A",
+      "imports": 2
+    },
+    {
+      "file": "src/application/exporting.py",
+      "sloc": 12,
+      "mi": 66.6913,
+      "rank": "A",
+      "imports": 2
+    },
+    {
+      "file": "src/application/queries.py",
+      "sloc": 12,
+      "mi": 65.5622,
+      "rank": "A",
+      "imports": 1
+    },
+    {
+      "file": "src/application/read_only.py",
+      "sloc": 8,
+      "mi": 100.0,
+      "rank": "A",
+      "imports": 1
+    },
+    {
+      "file": "src/application/versions.py",
+      "sloc": 12,
+      "mi": 66.4223,
+      "rank": "A",
+      "imports": 0
+    },
+    {
+      "file": "src/compat.py",
+      "sloc": 35,
+      "mi": 54.4817,
+      "rank": "A",
+      "imports": 9
+    },
+    {
+      "file": "src/domain/documents.py",
+      "sloc": 26,
+      "mi": 64.2519,
+      "rank": "A",
+      "imports": 4
+    },
+    {
+      "file": "src/domain/exporters.py",
+      "sloc": 28,
+      "mi": 64.0146,
+      "rank": "A",
+      "imports": 4
+    },
+    {
+      "file": "src/domain/ports.py",
+      "sloc": 13,
+      "mi": 100.0,
+      "rank": "A",
+      "imports": 1
+    },
+    {
+      "file": "src/domain/validation.py",
+      "sloc": 12,
+      "mi": 63.5517,
+      "rank": "A",
+      "imports": 0
+    },
+    {
+      "file": "src/extensions/builder.py",
+      "sloc": 24,
+      "mi": 63.5535,
+      "rank": "A",
+      "imports": 2
+    },
+    {
+      "file": "src/extensions/discounts.py",
+      "sloc": 16,
+      "mi": 59.6159,
+      "rank": "A",
+      "imports": 3
+    },
+    {
+      "file": "src/extensions/factory.py",
+      "sloc": 21,
+      "mi": 100.0,
+      "rank": "A",
+      "imports": 3
+    },
+    {
+      "file": "src/extensions/order.py",
+      "sloc": 28,
+      "mi": 47.3851,
+      "rank": "A",
+      "imports": 2
+    },
+    {
+      "file": "src/extensions/order_service.py",
+      "sloc": 12,
+      "mi": 69.5845,
+      "rank": "A",
+      "imports": 3
+    },
+    {
+      "file": "src/infrastructure/audit.py",
+      "sloc": 7,
+      "mi": 100.0,
+      "rank": "A",
+      "imports": 1
+    },
+    {
+      "file": "src/infrastructure/catalog.py",
+      "sloc": 32,
+      "mi": 55.0848,
+      "rank": "A",
+      "imports": 0
+    },
+    {
+      "file": "src/infrastructure/container.py",
+      "sloc": 16,
+      "mi": 100.0,
+      "rank": "A",
+      "imports": 1
+    },
+    {
+      "file": "src/infrastructure/memory.py",
+      "sloc": 13,
+      "mi": 100.0,
+      "rank": "A",
+      "imports": 1
+    },
+    {
+      "file": "src/infrastructure/order_repository.py",
+      "sloc": 15,
+      "mi": 66.4745,
+      "rank": "A",
+      "imports": 2
+    },
+    {
+      "file": "src/infrastructure/store.py",
+      "sloc": 13,
+      "mi": 66.2164,
+      "rank": "A",
+      "imports": 2
+    }
+  ]
+}
