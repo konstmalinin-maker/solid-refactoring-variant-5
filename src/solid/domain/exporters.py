@@ -3,7 +3,7 @@ import html
 import json
 from abc import ABC, abstractmethod
 
-from src.domain.documents import require_text
+from solid.domain.documents import require_text
 
 
 class Exporter(ABC):

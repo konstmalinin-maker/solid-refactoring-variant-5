@@ -2,15 +2,15 @@ from pathlib import Path
 
 import pytest
 
-from src.application.documents import DocumentService
-from src.application.exporting import ExportService
-from src.application.read_only import ReadOnlyDocumentView
-from src.compat import DocumentManager
-from src.domain.documents import Document, ScannedDocument, StoredDocument, TextContent, TextDocument, make_document
-from src.domain.exporters import Exporter, ExporterRegistry
-from src.domain.validation import DocumentValidator
-from src.infrastructure.catalog import CatalogRepository
-from src.infrastructure.memory import MemoryAudit, MemoryStore
+from solid.application.documents import DocumentService
+from solid.application.exporting import ExportService
+from solid.application.read_only import ReadOnlyDocumentView
+from solid.compat import DocumentManager
+from solid.domain.documents import Document, ScannedDocument, StoredDocument, TextContent, TextDocument, make_document
+from solid.domain.exporters import Exporter, ExporterRegistry
+from solid.domain.validation import DocumentValidator
+from solid.infrastructure.catalog import CatalogRepository
+from solid.infrastructure.memory import MemoryAudit, MemoryStore
 
 
 @pytest.fixture
@@ -99,8 +99,8 @@ def test_unknown_export_type_retains_legacy_exception(memory, format):
 
 def test_domain_and_application_import_no_storage_or_legacy():
     import ast
-    for root in (Path("src/domain"), Path("src/application")):
+    for root in (Path("src/solid/domain"), Path("src/solid/application")):
         for path in root.glob("*.py"):
             for node in ast.walk(ast.parse(path.read_text())):
                 if isinstance(node, ast.ImportFrom):
-                    assert not (node.module or "").startswith(("legacy", "src.infrastructure")), path
+                    assert not (node.module or "").startswith(("legacy", "solid.infrastructure")), path

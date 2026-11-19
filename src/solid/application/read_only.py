@@ -1,5 +1,5 @@
 """Read-only client has no fake write/export methods or runtime permission stubs."""
-from src.domain.ports import DocumentReader
+from solid.domain.ports import DocumentReader
 
 
 class ReadOnlyDocumentView:

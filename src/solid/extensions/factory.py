@@ -2,7 +2,7 @@
 from abc import ABC, abstractmethod
 from decimal import Decimal
 
-from src.extensions.discounts import NoDiscount, PercentageDiscount
+from solid.extensions.discounts import NoDiscount, PercentageDiscount
 
 
 class DiscountFactory(ABC):

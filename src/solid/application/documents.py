@@ -1,6 +1,6 @@
 """Document write use cases depend on ports; concrete construction belongs to the boundary."""
-from src.domain.ports import Audit, DocumentRepository
-from src.domain.validation import DocumentValidator
+from solid.domain.ports import Audit, DocumentRepository
+from solid.domain.validation import DocumentValidator
 
 
 class DocumentService:

@@ -1,7 +1,7 @@
 """B: object construction is separate from pricing, persistence and delivery."""
 from decimal import Decimal
 
-from src.extensions.order import Order, OrderLine
+from solid.extensions.order import Order, OrderLine
 
 
 class OrderBuilder:

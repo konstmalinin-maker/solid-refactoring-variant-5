@@ -4,13 +4,13 @@ from decimal import Decimal
 import pytest
 
 from main import build_container
-from src.extensions.builder import OrderBuilder
-from src.extensions.discounts import NoDiscount, PercentageDiscount
-from src.extensions.factory import DiscountFactory, RegisteredDiscountFactory
-from src.extensions.order import Order, OrderLine
-from src.extensions.order_service import OrderRepository, OrderService
-from src.infrastructure.container import Container
-from src.infrastructure.order_repository import MemoryOrderRepository, Receipt
+from solid.extensions.builder import OrderBuilder
+from solid.extensions.discounts import NoDiscount, PercentageDiscount
+from solid.extensions.factory import DiscountFactory, RegisteredDiscountFactory
+from solid.extensions.order import Order, OrderLine
+from solid.extensions.order_service import OrderRepository, OrderService
+from solid.infrastructure.container import Container
+from solid.infrastructure.order_repository import MemoryOrderRepository, Receipt
 
 
 @pytest.mark.parametrize("kind,expected", [("regular", "95.00"), ("vip", "90.00"),

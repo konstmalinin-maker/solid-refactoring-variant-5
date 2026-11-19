@@ -3,12 +3,12 @@ import argparse
 import json
 from dataclasses import asdict
 
-from src.compat import DocumentManager
-from src.extensions.builder import OrderBuilder
-from src.extensions.factory import DiscountFactory, RegisteredDiscountFactory
-from src.extensions.order_service import OrderRepository, OrderService
-from src.infrastructure.container import Container
-from src.infrastructure.order_repository import MemoryOrderRepository
+from solid.compat import DocumentManager
+from solid.extensions.builder import OrderBuilder
+from solid.extensions.factory import DiscountFactory, RegisteredDiscountFactory
+from solid.extensions.order_service import OrderRepository, OrderService
+from solid.infrastructure.container import Container
+from solid.infrastructure.order_repository import MemoryOrderRepository
 
 
 def build_container(directory):

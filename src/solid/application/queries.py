@@ -1,5 +1,5 @@
 """Read operations; does not write files or create versions."""
-from src.domain.ports import DocumentReader
+from solid.domain.ports import DocumentReader
 
 
 class DocumentQueries:

@@ -2,7 +2,7 @@
 from decimal import Decimal
 from typing import Protocol
 
-from src.extensions.factory import DiscountFactory
+from solid.extensions.factory import DiscountFactory
 
 
 class OrderRepository(Protocol):

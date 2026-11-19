@@ -1,5 +1,5 @@
 [tool.pytest.ini_options]
-pythonpath = ["."]
+pythonpath = [".", "src"]
 testpaths = ["tests_before", "tests_after"]
 addopts = "--backend=refactored"
 [tool.ruff]
@@ -10,7 +10,18 @@ select = ["E4", "E7", "E9", "F", "I"]
 "legacy/*" = ["ALL"]
 
 [tool.mutmut]
-paths_to_mutate = ["src/"]
+paths_to_mutate = ["src/solid/"]
 tests_dir = ["tests_before", "tests_after"]
 also_copy = ["tests_before", "tests_after", "conftest.py", "legacy", "main.py"]
 max_stack_depth = -1
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "solid-document-refactoring"
+version = "1.0.0"
+requires-python = ">=3.10"
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["solid*"]
