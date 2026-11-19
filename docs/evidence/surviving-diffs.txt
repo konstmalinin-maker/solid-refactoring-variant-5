@@ -1,0 +1,41 @@
+# solid.application.exporting.xǁExportServiceǁexport__mutmut_5: survived
+--- src/solid/application/exporting.py
++++ src/solid/application/exporting.py
+@@ -1,6 +1,6 @@
+ def export(self, document_id, format):
+     record = self.reader.get(document_id)
+     if record is None:
+-        raise KeyError("document not found")
++        raise KeyError("XXdocument not foundXX")
+     document = make_document(record)
+     return self.exporters.create(format).render(document)
+
+# solid.application.versions.xǁVersionServiceǁrestore__mutmut_4: survived
+--- src/solid/application/versions.py
++++ src/solid/application/versions.py
+@@ -1,6 +1,6 @@
+ def restore(self, document_id, version):
+     if self.reader.get(document_id) is None:
+-        raise KeyError("document not found")
++        raise KeyError("XXdocument not foundXX")
+     for record in self.versions(document_id):
+         if record["version"] == version:
+             return self.commands.update(document_id, record["title"], record["content"])
+
+# solid.domain.exporters.xǁJsonExporterǁrender__mutmut_2: survived
+--- src/solid/domain/exporters.py
++++ src/solid/domain/exporters.py
+@@ -1,2 +1,2 @@
+ def render(self, document):
+-    return json.dumps(document.snapshot(), ensure_ascii=False, sort_keys=True, indent=2)
++    return json.dumps(document.snapshot(), ensure_ascii=None, sort_keys=True, indent=2)
+
+# solid.extensions.order_service.xǁOrderServiceǁprocess_order__mutmut_5: survived
+--- src/solid/extensions/order_service.py
++++ src/solid/extensions/order_service.py
+@@ -1,4 +1,4 @@
+ def process_order(self, order):
+-    total = sum((line.price * line.quantity for line in order.items), Decimal(0))
++    total = sum((line.price * line.quantity for line in order.items), )
+     policy = self.factory.create(order.user_type)
+     return self.repository.save(order, policy.apply(total))

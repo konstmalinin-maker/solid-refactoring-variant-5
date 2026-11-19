@@ -1,0 +1,19 @@
+{
+  "total": 6,
+  "counts": {
+    "killed": 4,
+    "survived": 2
+  },
+  "survivor_percent": 33.333333333333336,
+  "non_killed_percent": 33.333333333333336,
+  "files": {
+    "src/solid/extensions/discounts.py.meta": {
+      "killed": 4,
+      "survived": 2
+    }
+  },
+  "surviving_ids": [
+    "solid.extensions.discounts.xǁNoDiscountǁapply__mutmut_2",
+    "solid.extensions.discounts.xǁNoDiscountǁapply__mutmut_4"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+    "exit_code_by_key": {
+        "solid.extensions.order_service.x\u01c1OrderService\u01c1__init____mutmut_1": 1,
+        "solid.extensions.order_service.x\u01c1OrderService\u01c1process_order__mutmut_1": 1,
+        "solid.extensions.order_service.x\u01c1OrderService\u01c1process_order__mutmut_2": 1,
+        "solid.extensions.order_service.x\u01c1OrderService\u01c1process_order__mutmut_3": 1,
+        "solid.extensions.order_service.x\u01c1OrderService\u01c1process_order__mutmut_4": 1,
+        "solid.extensions.order_service.x\u01c1OrderService\u01c1process_order__mutmut_5": 0,
+        "solid.extensions.order_service.x\u01c1OrderService\u01c1process_order__mutmut_6": 1,
+        "solid.extensions.order_service.x\u01c1OrderService\u01c1process_order__mutmut_7": 1,
+        "solid.extensions.order_service.x\u01c1OrderService\u01c1process_order__mutmut_8": 1,
+        "solid.extensions.order_service.x\u01c1OrderService\u01c1process_order__mutmut_9": 1,
+        "solid.extensions.order_service.x\u01c1OrderService\u01c1process_order__mutmut_10": 1,
+        "solid.extensions.order_service.x\u01c1OrderService\u01c1process_order__mutmut_11": 1,
+        "solid.extensions.order_service.x\u01c1OrderService\u01c1process_order__mutmut_12": 1,
+        "solid.extensions.order_service.x\u01c1OrderService\u01c1process_order__mutmut_13": 1,
+        "solid.extensions.order_service.x\u01c1OrderService\u01c1process_order__mutmut_14": 1,
+        "solid.extensions.order_service.x\u01c1OrderService\u01c1process_order__mutmut_15": 1
+    },
+    "hash_by_function_name": {}
+}

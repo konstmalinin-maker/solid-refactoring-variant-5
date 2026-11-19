@@ -12,147 +12,147 @@
   "sloc": 380,
   "files": [
     {
-      "file": "src/application/documents.py",
+      "file": "src/solid/application/documents.py",
       "sloc": 25,
       "mi": 58.68,
       "rank": "A",
       "imports": 2
     },
     {
-      "file": "src/application/exporting.py",
+      "file": "src/solid/application/exporting.py",
       "sloc": 12,
       "mi": 66.6913,
       "rank": "A",
       "imports": 2
     },
     {
-      "file": "src/application/queries.py",
+      "file": "src/solid/application/queries.py",
       "sloc": 12,
       "mi": 65.5622,
       "rank": "A",
       "imports": 1
     },
     {
-      "file": "src/application/read_only.py",
+      "file": "src/solid/application/read_only.py",
       "sloc": 8,
       "mi": 100.0,
       "rank": "A",
       "imports": 1
     },
     {
-      "file": "src/application/versions.py",
+      "file": "src/solid/application/versions.py",
       "sloc": 12,
       "mi": 66.4223,
       "rank": "A",
       "imports": 0
     },
     {
-      "file": "src/compat.py",
+      "file": "src/solid/compat.py",
       "sloc": 35,
       "mi": 54.4817,
       "rank": "A",
       "imports": 9
     },
     {
-      "file": "src/domain/documents.py",
+      "file": "src/solid/domain/documents.py",
       "sloc": 26,
       "mi": 64.2519,
       "rank": "A",
       "imports": 4
     },
     {
-      "file": "src/domain/exporters.py",
+      "file": "src/solid/domain/exporters.py",
       "sloc": 28,
       "mi": 64.0146,
       "rank": "A",
       "imports": 4
     },
     {
-      "file": "src/domain/ports.py",
+      "file": "src/solid/domain/ports.py",
       "sloc": 13,
       "mi": 100.0,
       "rank": "A",
       "imports": 1
     },
     {
-      "file": "src/domain/validation.py",
+      "file": "src/solid/domain/validation.py",
       "sloc": 12,
       "mi": 63.5517,
       "rank": "A",
       "imports": 0
     },
     {
-      "file": "src/extensions/builder.py",
+      "file": "src/solid/extensions/builder.py",
       "sloc": 24,
       "mi": 63.5535,
       "rank": "A",
       "imports": 2
     },
     {
-      "file": "src/extensions/discounts.py",
+      "file": "src/solid/extensions/discounts.py",
       "sloc": 16,
       "mi": 59.6159,
       "rank": "A",
       "imports": 3
     },
     {
-      "file": "src/extensions/factory.py",
+      "file": "src/solid/extensions/factory.py",
       "sloc": 21,
       "mi": 100.0,
       "rank": "A",
       "imports": 3
     },
     {
-      "file": "src/extensions/order.py",
+      "file": "src/solid/extensions/order.py",
       "sloc": 28,
       "mi": 47.3851,
       "rank": "A",
       "imports": 2
     },
     {
-      "file": "src/extensions/order_service.py",
+      "file": "src/solid/extensions/order_service.py",
       "sloc": 12,
       "mi": 69.5845,
       "rank": "A",
       "imports": 3
     },
     {
-      "file": "src/infrastructure/audit.py",
+      "file": "src/solid/infrastructure/audit.py",
       "sloc": 7,
       "mi": 100.0,
       "rank": "A",
       "imports": 1
     },
     {
-      "file": "src/infrastructure/catalog.py",
+      "file": "src/solid/infrastructure/catalog.py",
       "sloc": 32,
       "mi": 55.0848,
       "rank": "A",
       "imports": 0
     },
     {
-      "file": "src/infrastructure/container.py",
+      "file": "src/solid/infrastructure/container.py",
       "sloc": 16,
       "mi": 100.0,
       "rank": "A",
       "imports": 1
     },
     {
-      "file": "src/infrastructure/memory.py",
+      "file": "src/solid/infrastructure/memory.py",
       "sloc": 13,
       "mi": 100.0,
       "rank": "A",
       "imports": 1
     },
     {
-      "file": "src/infrastructure/order_repository.py",
+      "file": "src/solid/infrastructure/order_repository.py",
       "sloc": 15,
       "mi": 66.4745,
       "rank": "A",
       "imports": 2
     },
     {
-      "file": "src/infrastructure/store.py",
+      "file": "src/solid/infrastructure/store.py",
       "sloc": 13,
       "mi": 66.2164,
       "rank": "A",

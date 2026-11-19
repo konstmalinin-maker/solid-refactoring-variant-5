@@ -1,0 +1,1 @@
+{"conclusion":"success","jobs":[{"conclusion":"success","name":"tests-and-metrics"},{"conclusion":"success","name":"weak-tests-and-benchmark"},{"conclusion":"success","name":"mutation"}],"status":"completed","url":"https://github.com/konstmalinin-maker/solid-refactoring-variant-5/actions/runs/44515942876"}
