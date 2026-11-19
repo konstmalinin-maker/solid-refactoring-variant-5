@@ -1,17 +1,11 @@
-"""Only document write use cases. DIP will remove concrete construction in step 5."""
-from pathlib import Path
-
+"""Document write use cases depend on ports; concrete construction belongs to the boundary."""
+from src.domain.ports import Audit, DocumentRepository
 from src.domain.validation import DocumentValidator
-from src.infrastructure.audit import FileAuditLog
-from src.infrastructure.catalog import CatalogRepository
-from src.infrastructure.store import JsonStore
 
 
 class DocumentService:
-    def __init__(self, directory):
-        self.repository = CatalogRepository(JsonStore(directory))
-        self.validator = DocumentValidator()
-        self.audit = FileAuditLog(Path(directory) / "audit.log")
+    def __init__(self, repository: DocumentRepository, validator: DocumentValidator, audit: Audit):
+        self.repository, self.validator, self.audit = repository, validator, audit
 
     def create(self, title, content, kind="text"):
         self.validator.validate(title, content, kind)

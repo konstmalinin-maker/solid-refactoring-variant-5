@@ -1,13 +1,21 @@
 """Stable external API; delegates to focused services, retains no business rules."""
+from pathlib import Path
+
 from src.application.documents import DocumentService
 from src.application.exporting import ExportService
 from src.application.queries import DocumentQueries
 from src.application.versions import VersionService
+from src.domain.validation import DocumentValidator
+from src.infrastructure.audit import FileAuditLog
+from src.infrastructure.catalog import CatalogRepository
+from src.infrastructure.store import JsonStore
 
 
 class DocumentManager:
-    def __init__(self, directory):
-        self.commands = DocumentService(directory)
+    def __init__(self, directory, repository=None, audit=None):
+        repository = repository if repository is not None else CatalogRepository(JsonStore(directory))
+        audit = audit if audit is not None else FileAuditLog(Path(directory) / "audit.log")
+        self.commands = DocumentService(repository, DocumentValidator(), audit)
         self.reader = DocumentQueries(self.commands.repository)
         self.revisions = VersionService(self.commands.repository, self.commands)
         self.exporter = ExportService(self.reader)
