@@ -1,0 +1,22 @@
+{
+  "average_cc": 1.6364,
+  "cc_rank": "A",
+  "maximum_cc": 6,
+  "weighted_mi": 43.8101,
+  "minimum_mi": 43.8101,
+  "average_method_loc": 3.7273,
+  "maximum_method_loc": 15,
+  "main_class": "DocumentManager",
+  "main_class_methods": 13,
+  "classes": 6,
+  "sloc": 139,
+  "files": [
+    {
+      "file": "legacy/bad_code.py",
+      "sloc": 139,
+      "mi": 43.8101,
+      "rank": "A",
+      "imports": 4
+    }
+  ]
+}
