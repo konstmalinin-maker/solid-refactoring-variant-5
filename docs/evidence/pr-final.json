@@ -1,0 +1,30 @@
+{
+  "html_url": "https://github.com/konstmalinin-maker/solid-refactoring-variant-5/pull/6",
+  "title": "refactor: apply SOLID principles to variant 5 document management",
+  "state": "closed",
+  "merged": true,
+  "merged_at": "2026-11-19T11:46:49Z",
+  "merge_commit_sha": "28d7d0f10fe3afc446ec0aa7f67a2b5bae7e3d35",
+  "issues": [
+    {
+      "number": 5,
+      "state": "closed"
+    },
+    {
+      "number": 4,
+      "state": "closed"
+    },
+    {
+      "number": 3,
+      "state": "closed"
+    },
+    {
+      "number": 2,
+      "state": "closed"
+    },
+    {
+      "number": 1,
+      "state": "closed"
+    }
+  ]
+}

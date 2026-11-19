@@ -1,0 +1,122 @@
+{
+  "capture": "Native Xfce Terminal, 1364×1024; unmodified PNG bytes",
+  "date": "19.11.2026",
+  "notes": "Screenshots show actual execution, measured JSON, original step logs and GitHub API responses. Only blank bottom space is hidden by report layout. CI screenshot 17 reads the actual successful run 44515942876. Screenshot 18 is the intentional failing baseline control. No external peer review was performed.",
+  "screenshots": [
+    {
+      "file": "01-legacy-violations.png",
+      "sha256": "efb61bf94aecfc2200a3676436ae02bc6f1d1c3b91dc392a1c7ff6ee7da89dcc",
+      "bytes": 198390
+    },
+    {
+      "file": "02-before-tests.png",
+      "sha256": "69dc83644ee04ae87ea51103d49815761ad3031464d3acba972312bee36d43d0",
+      "bytes": 99673
+    },
+    {
+      "file": "03-before-metrics.png",
+      "sha256": "3425383614fc41e7dba530d7839d3e3fe9dab059d925aeb9c05a9627bd6e745c",
+      "bytes": 135207
+    },
+    {
+      "file": "04-srp.png",
+      "sha256": "5c7711760448df3b4de7efe6a322bacb8d4806065385f009fb9a679e452df622",
+      "bytes": 224842
+    },
+    {
+      "file": "05-ocp.png",
+      "sha256": "b44e975be36459a4f6739838f907ab80244dc2f52f4e7e7eed55c9891e37f51d",
+      "bytes": 176602
+    },
+    {
+      "file": "06-lsp.png",
+      "sha256": "56101fdbdbd4f220539e5fafb9b90d41112d096e54f55fd15b58f96f8f194e4d",
+      "bytes": 193798
+    },
+    {
+      "file": "07-isp.png",
+      "sha256": "ec287fa10badf9478903bf90d07b44496e082a9fa63266346a15d25553b5dfdd",
+      "bytes": 173110
+    },
+    {
+      "file": "08-dip.png",
+      "sha256": "f48eaf061fee9926357c07082ee96bc6a7c441542b7476feeb19aff734fc0dfc",
+      "bytes": 189642
+    },
+    {
+      "file": "09-frozen-history.png",
+      "sha256": "3b2cd2eb03b275a6a58f8e93fbed21b35de9fb6566a6d7362a296cfa27fe3d98",
+      "bytes": 224846
+    },
+    {
+      "file": "10-after-tests.png",
+      "sha256": "40e32208b7c9e77afee37d54941da32c63c55aab81f0974d5ab20b72f2e29f6b",
+      "bytes": 224352
+    },
+    {
+      "file": "11-after-metrics.png",
+      "sha256": "ec45cb83653feb7b51fc0c04c6d495aaad8ca5d22fa65abc77ef2582b1eb0d9c",
+      "bytes": 126906
+    },
+    {
+      "file": "12-structure.png",
+      "sha256": "adfdd83d075639312249e697cbee48260ca7e8ffd1d96a06954b15b7c102c200",
+      "bytes": 165995
+    },
+    {
+      "file": "13-factory.png",
+      "sha256": "9789387ac0c40ca2f15b8ba16f0a8fe532f7b002883145ae50710c815a3fc897",
+      "bytes": 237509
+    },
+    {
+      "file": "14-builder.png",
+      "sha256": "7b36f5f11a1edb8b0ec51b9361a4b21352f44f076fc4e7449aeadf0108808306",
+      "bytes": 257551
+    },
+    {
+      "file": "15-container.png",
+      "sha256": "645491f4e70b0e79745a7a02f891acc96d2b3d83f32195b715b672a47e5f3560",
+      "bytes": 132122
+    },
+    {
+      "file": "16-mutation.png",
+      "sha256": "73ff52c1328a055b729652f608981a12c64ccaf54a1c09d0059f9e5155498659",
+      "bytes": 86355
+    },
+    {
+      "file": "17-weak-tests.png",
+      "sha256": "364509be033032c113a5423c12c7bbf9358d184e346ee6e850f8d5d5f13cce1d",
+      "bytes": 145592
+    },
+    {
+      "file": "18-alternative.png",
+      "sha256": "4de160403a636ecbe5bb78e8eb9e740cf51e2163ad4099f1cafbc78e271af623",
+      "bytes": 93745
+    },
+    {
+      "file": "19-benchmark.png",
+      "sha256": "29bab660ce56433304e4d90d1c619de357ed79e02727b2afc2d48556c1d2fc69",
+      "bytes": 105672
+    },
+    {
+      "file": "20-demo.png",
+      "sha256": "82d01c494ef33cfdcc719efc39ceb630f86e7d4107af6b2562fbba22f3537b0a",
+      "bytes": 76551
+    },
+    {
+      "file": "21-ci-positive.png",
+      "sha256": "3dad84611ddcf3c57827940e0c126638068f9c2df138e0375b7e0f1b78b3bd06",
+      "bytes": 92316
+    },
+    {
+      "file": "22-ci-negative.png",
+      "sha256": "2e3c190c6f4cdf2dd0e153ea8c30583676d4d2033ad6282e63296d74e42fe9cd",
+      "bytes": 114748
+    },
+    {
+      "file": "23-pr-merged.png",
+      "sha256": "cdc0e127f237b980561ddf78a498e3251ca858dac7bb7c0fb93a9afdd01cdeb9",
+      "bytes": 105643
+    }
+  ]
+}

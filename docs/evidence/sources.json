@@ -3,5 +3,7 @@
   "expected_negative_ci": "https://github.com/konstmalinin-maker/solid-refactoring-variant-5/actions/runs/44514466635",
   "pull_request": "https://github.com/konstmalinin-maker/solid-refactoring-variant-5/pull/6",
   "baseline": "80b1bde",
-  "frozen_tests": "ce98fb0"
+  "frozen_tests": "ce98fb0",
+  "merged_main_ci": "https://github.com/konstmalinin-maker/solid-refactoring-variant-5/actions/runs/44517856719",
+  "merge_commit": "28d7d0f10fe3afc446ec0aa7f67a2b5bae7e3d35"
 }

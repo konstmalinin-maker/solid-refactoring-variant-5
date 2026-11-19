@@ -61,6 +61,6 @@ elif step == "dip":
 else:
     raise SystemExit("unknown step")
 print("\nREGRESSION CHECK (original command log):")
-p = Path("/workspace/pr9-data/step-" + step + ".txt")
+p = Path("docs/evidence/step-" + step + ".txt")
 if p.exists():
     print(p.read_text())
