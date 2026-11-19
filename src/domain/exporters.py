@@ -3,6 +3,8 @@ import html
 import json
 from abc import ABC, abstractmethod
 
+from src.domain.documents import require_text
+
 
 class Exporter(ABC):
     @abstractmethod
@@ -11,17 +13,17 @@ class Exporter(ABC):
 
 class TextExporter(Exporter):
     def render(self, document):
-        return document.get_text()
+        return require_text(document)
 
 
 class HtmlExporter(Exporter):
     def render(self, document):
-        return f'<h1>{html.escape(document.record["title"])}</h1><p>{html.escape(document.get_text())}</p>'
+        return f'<h1>{html.escape(document.snapshot()["title"])}</h1><p>{html.escape(require_text(document))}</p>'
 
 
 class JsonExporter(Exporter):
     def render(self, document):
-        return json.dumps(document.record, ensure_ascii=False, sort_keys=True, indent=2)
+        return json.dumps(document.snapshot(), ensure_ascii=False, sort_keys=True, indent=2)
 
 
 class ExporterRegistry:

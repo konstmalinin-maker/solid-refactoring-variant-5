@@ -1,5 +1,5 @@
 """Orchestrates lookup and strategy selection; knows no concrete output formats."""
-from legacy.bad_code import Document, ScannedDocument
+from src.domain.documents import make_document
 from src.domain.exporters import ExporterRegistry
 
 
@@ -12,5 +12,5 @@ class ExportService:
         record = self.reader.get(document_id)
         if record is None:
             raise KeyError("document not found")
-        document = ScannedDocument(record) if record["kind"] == "scan" else Document(record)
+        document = make_document(record)
         return self.exporters.create(format).render(document)
